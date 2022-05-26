@@ -51,6 +51,15 @@
 - SET PASSWORD FOR 'name-user'@'host-name' = PASSWORD('password-user-new');
 
 #
+# Import Database
+
+**Nhập dữu liệu:**
+- mysql -p -u username database_name < file.sql
+
+**Xuất dữ liệu:**
+- mysqldump -u user_name -p[database_name] > dbname.sql
+
+#
 # Tạo User
 
 **Tạo User:** 
