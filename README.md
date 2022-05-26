@@ -156,3 +156,10 @@
   - root /var/db/backup_db/backupDatabase.sh
 - Kiểm tra ngày giờ hiện tại:
   - date
+
+#
+# Lỗi không connect được mysql
+
+**Lỗi :
+mysqli::real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it**
+- Vào thư mục xampp\mysql\data xóa tất cả file để lại thư mục sau đó chạy lại mysql ở xampp
