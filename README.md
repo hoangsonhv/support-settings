@@ -163,3 +163,11 @@
 **Lỗi :
 mysqli::real_connect(): (HY000/2002): No connection could be made because the target machine actively refused it**
 - Vào thư mục xampp\mysql\data xóa tất cả file để lại thư mục sau đó chạy lại mysql ở xampp
+
+#
+# Lỗi npm không run dev
+
+**Cài đặt node && npm sau đó:**
+- npm install --save --legacy-peer-deps
+- npm install
+- npm run dev
