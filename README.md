@@ -140,7 +140,7 @@
 - sudo chown $(whoami):$(whoami) /var/db/backup_db
 
 **Tạo file .sh để chứa câu lệnh thực thi:**
-- touch /var/db/backupDatabase.sh
+- touch /var/db/backup_db/backupDatabase.sh
 
 **Nội dung file backupDatabase.sh:**
 - mysqldump -u [username] –p[password] [database_name] > /path_to_[database_name].sql
