@@ -129,3 +129,30 @@
 
 **Danh sách các lệnh trong win:**
 - Get-Alias
+
+#
+# Backup DB Centos
+
+**Tạo thư mục backup_db:**
+- sudo mkdir /var/db/backup_db
+
+**Cấp quyền thực thi:**
+- sudo chown $(whoami):$(whoami) /var/db/backup_db
+
+**Tạo file .sh để chứa câu lệnh thực thi:**
+- touch /var/db/backupDatabase.sh
+
+**Nội dung file backupDatabase.sh:**
+- mysqldump -u [username] –p[password] [database_name] > /path_to_[database_name].sql
+
+**Format nội dung file backupDatabase.sh theo ngày tháng:**
+- Mdate=“$(date +“%Y-%m-%d”)”
+- mysqldump -u [username] –p[password] [database_name] > /path_to_[database_name].$Mdate.sql
+
+**Sao lưu tự động:**
+- Mở crontab: 
+    - sudo vi /etc/crontab
+- Thêm dòng lệnh ở cuối file:
+  - root /var/db/backup_db/backupDatabase.sh
+- Kiểm tra ngày giờ hiện tại:
+  - date
