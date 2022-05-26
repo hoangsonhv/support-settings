@@ -30,6 +30,7 @@
 **Kiểm tra trang thái hoạt động:**
 - sudo systemctl status mysqld
 
+#
 # Đổi mật khẩu khi cài đặt mysql
 
 **Lấy mật khẩu root tạm thời khi cài:** 
@@ -41,6 +42,7 @@
 - Rồi điền mật khẩu mới
 - Bấm y hoàn tất quá trình.
 
+#
 # Đổi mật khẩu user trong mysql
 
 - mysql -u root -p 
@@ -48,6 +50,7 @@
 - USE mysql;
 - SET PASSWORD FOR 'name-user'@'host-name' = PASSWORD('password-user-new');
 
+#
 # Tạo User
 
 **Tạo User:** 
@@ -66,6 +69,7 @@
 **Người dùng hiện tại:** 
 - select user();
 
+#
 # Kiểm tra tường lửa
 
 **Kiểm tra trạng thái:**
@@ -77,6 +81,7 @@
 **Reload firewall:** 
 - firewall-cmd --reload
 
+#
 # Cài đặt PHP trên Centos 7
 
 **Sử dụng Remi repository để cài đặt PHP 7:**
@@ -92,6 +97,7 @@
 **Chạy máy chủ apache:** 
 - sudo systemctl restart httpd
 
+#
 # Giải nén/nén file trong Centos
 
 **Giải nén file Zip trong Centos7:** 
@@ -100,6 +106,7 @@
 **Nén thành file zip:** 
 - zip -r tên.zip tên
 
+#
 # Kết nối ssh
 
 **Kết nối ssh lên server:**
