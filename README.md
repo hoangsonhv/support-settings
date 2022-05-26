@@ -30,7 +30,7 @@
 **Kiểm tra trang thái hoạt động:**
 - sudo systemctl status mysqld
 
-#Đổi mật khẩu khi cài đặt mysql
+# Đổi mật khẩu khi cài đặt mysql
 
 **Lấy mật khẩu root tạm thời khi cài:** 
 - sudo grep 'password' /var/log/mysqld.log
